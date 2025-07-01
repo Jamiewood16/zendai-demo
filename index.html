@@ -1,55 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>ZendAI Chatbot</title>
-    <style>
-      body {
-        margin: 0;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #f4f4f4;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-      }
-      header {
-        background-color: #685FFF;
-        color: white;
-        padding: 2rem;
-        text-align: center;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <title>ZendAI Restaurant Chatbot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #f8f8f8, #fdfdfd);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #d62828;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    main {
+      flex: 1;
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .chatbox {
+      width: 100%;
+      max-width: 900px;
+      height: 80vh;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      border: 1px solid #eee;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+      background: #f1f1f1;
+    }
+
+    @media (max-width: 768px) {
       header h1 {
-        margin: 0;
-        font-size: 2.5rem;
+        font-size: 1.8rem;
       }
       header p {
-        margin: 0.5rem 0 0;
-        font-size: 1.1rem;
+        font-size: 1rem;
       }
-      .chat-container {
-        flex: 1;
-        border: none;
-        height: 100%;
+      .chatbox {
+        height: 75vh;
       }
-      iframe {
-        width: 100%;
-        height: calc(100vh - 160px);
-        border: none;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Welcome to ZendAI</h1>
-      <p>Your smart assistant for bookings and customer questions</p>
-    </header>
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to ZendAI</h1>
+    <p>Your AI assistant for restaurant menus, bookings, and FAQs</p>
+  </header>
 
-    <div class="chat-container">
-      <iframe 
-        src="https://app.relevanceai.com/agents/d7b62b/15740d8292ae-4c28-aa7f-723fc5ceb6cb/1197cb13-859a-4e6e-897a-041adf5291a8/embed-chat?hide_tool_steps=false&hide_file_uploads=false&hide_conversation_list=false&bubble_style=agent&primary_color=%23685FFF&bubble_icon=pd%2Fchat&input_placeholder_text=Type+your+message...&hide_logo=false&hide_description=false" 
-        allow="clipboard-write"
-      ></iframe>
+  <main>
+    <div class="chatbox">
+      <iframe src="https://app.relevanceai.com/agents/d7b62b/15740d8292ae-4c28-aa7f-723fc5ceb6cb/1197cb13-859a-4e6e-897a-041adf5291a8/embed-chat?hide_tool_steps=false&hide_file_uploads=false&hide_conversation_list=false&bubble_style=agent&primary_color=%23d62828&bubble_icon=pd%2Fchat&input_placeholder_text=Ask+about+menu,+hours,+or+booking..." allow="clipboard-write"></iframe>
     </div>
-  </body>
+  </main>
+
+  <footer>
+    © 2025 ZendAI | Built for smart restaurants
+  </footer>
+</body>
 </html>
