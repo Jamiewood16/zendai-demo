@@ -2,33 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>ZendAI Restaurant Chatbot</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ZendAI Restaurant Assistant</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #f8f8f8, #fdfdfd);
+      font-family: 'Georgia', serif;
+      background: url('https://www.transparenttextures.com/patterns/white-wall-3.png');
+      background-color: #fdfcf9;
+      color: #333;
       display: flex;
       flex-direction: column;
       min-height: 100vh;
     }
 
     header {
-      background-color: #d62828;
+      background: linear-gradient(to right, #612626, #8B3A3A);
       color: white;
       padding: 2rem 1rem;
       text-align: center;
     }
 
+    header img {
+      max-width: 80px;
+      margin-bottom: 1rem;
+    }
+
     header h1 {
       margin: 0;
       font-size: 2.5rem;
+      font-weight: normal;
     }
 
     header p {
       margin-top: 0.5rem;
       font-size: 1.2rem;
+      color: #f9e9d3;
     }
 
     main {
@@ -43,10 +52,11 @@
       width: 100%;
       max-width: 900px;
       height: 80vh;
+      background: white;
       border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-      border: 1px solid #eee;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      border: 1px solid #ddd;
     }
 
     iframe {
@@ -60,16 +70,18 @@
       padding: 1rem;
       font-size: 0.9rem;
       color: #777;
-      background: #f1f1f1;
+      background: #f3f3f3;
     }
 
     @media (max-width: 768px) {
       header h1 {
         font-size: 1.8rem;
       }
+
       header p {
         font-size: 1rem;
       }
+
       .chatbox {
         height: 75vh;
       }
@@ -78,18 +90,22 @@
 </head>
 <body>
   <header>
+    <img src="logo.png" alt="Restaurant Logo" />
     <h1>Welcome to ZendAI</h1>
-    <p>Your AI assistant for restaurant menus, bookings, and FAQs</p>
+    <p>Your personal restaurant assistant — bookings, menus & more</p>
   </header>
 
   <main>
     <div class="chatbox">
-      <iframe src="https://app.relevanceai.com/agents/d7b62b/15740d8292ae-4c28-aa7f-723fc5ceb6cb/1197cb13-859a-4e6e-897a-041adf5291a8/embed-chat?hide_tool_steps=false&hide_file_uploads=false&hide_conversation_list=false&bubble_style=agent&primary_color=%23d62828&bubble_icon=pd%2Fchat&input_placeholder_text=Ask+about+menu,+hours,+or+booking..." allow="clipboard-write"></iframe>
+      <iframe 
+        src="https://app.relevanceai.com/agents/d7b62b/15740d8292ae-4c28-aa7f-723fc5ceb6cb/1197cb13-859a-4e6e-897a-041adf5291a8/embed-chat?hide_tool_steps=false&hide_file_uploads=false&hide_conversation_list=false&bubble_style=agent&primary_color=%23685FFF&bubble_icon=pd%2Fchat&input_placeholder_text=Ask+about+menu,+hours,+or+booking..." 
+        allow="clipboard-write"
+      ></iframe>
     </div>
   </main>
 
   <footer>
-    © 2025 ZendAI | Built for smart restaurants
+    © 2025 ZendAI — Built for modern restaurants
   </footer>
 </body>
 </html>
