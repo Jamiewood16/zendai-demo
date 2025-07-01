@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ZendAI for Restaurants</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter&display=swap" rel="stylesheet">
   <style>
@@ -50,6 +50,45 @@
       border-radius: 12px;
       box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
     }
+
+    section.contact {
+      padding: 2rem;
+      background: #f6f2ec;
+      text-align: center;
+      margin-top: 4rem;
+      border-top: 1px solid #ddd;
+    }
+
+    section.contact h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    section.contact p {
+      font-size: 1.1rem;
+      color: #444;
+    }
+
+    section.contact a {
+      color: #685FFF;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      iframe {
+        height: 500px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -61,10 +100,21 @@
 
   <main>
     <h1>Welcome to ZendAI</h1>
-    <p>Your smart AI assistant for taking restaurant bookings and enhancing customer engagement.</p>
+    <p>Your smart AI assistant for taking restaurant bookings and answering customer questions.</p>
 
-    <iframe src="https://app.relevanceai.com/agents/d7b62b/15740d8292ae-4c28-aa7f-723fc5ceb6cb/1197cb13-859a-4e6e-897a-041adf5291a8/embed-chat?hide_tool_steps=false&hide_file_uploads=false&hide_conversation_list=false&bubble_style=agent&primary_color=%23685FFF&bubble_icon=pd%2Fchat&input_placeholder_text=Type+your+message...&hide_logo=false&hide_description=false"></iframe>
+    <iframe 
+      src="https://app.relevanceai.com/agents/d7b62b/15740d8292ae-4c28-aa7f-723fc5ceb6cb/1197cb13-859a-4e6e-897a-041adf5291a8/embed-chat?hide_tool_steps=false&hide_file_uploads=false&hide_conversation_list=false&bubble_style=agent&primary_color=%23685FFF&bubble_icon=pd%2Fchat&input_placeholder_text=Type+your+message...&hide_logo=false&hide_description=false"
+      allow="clipboard-write"
+    ></iframe>
   </main>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>
+      For inquiries, demos, or support, email us at:<br />
+      <a href="mailto:zendai.abot@gmail.com">zendai.abot@gmail.com</a>
+    </p>
+  </section>
 
 </body>
 </html>
